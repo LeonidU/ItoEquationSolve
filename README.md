@@ -11,3 +11,8 @@ where:
 - $\mu(X_t, t)$ — drift function,
 - $\sigma(X_t, t)$ — diffusion function (volatility),
 - $W_t$ — Wiener process (brownian motion).
+
+## TODO
+1. Numerical intergration of stoshastic equations
+2. Using of different random process
+3. Trying to modelling markets by that
