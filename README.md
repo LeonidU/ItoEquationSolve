@@ -16,3 +16,4 @@ where:
 1. Numerical intergration of stoshastic equations
 2. Using of different random process
 3. Trying to modelling markets by that
+4. Using newspaper data for sentiment analisys
