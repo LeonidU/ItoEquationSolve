@@ -1,4 +1,4 @@
-# ItoEquationSolve
+# Ito Equation Solve And My Financial Mathematics Experiments
 
 My experiments about Ito equation solve and using in financial mathematics
 
@@ -11,6 +11,8 @@ where:
 - $\mu(X_t, t)$ — drift function,
 - $\sigma(X_t, t)$ — diffusion function (volatility),
 - $W_t$ — Wiener process (brownian motion).
+
+and another experiments in finance math.
 
 ## TODO
 1. Numerical intergration of stoshastic equations
