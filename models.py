@@ -88,7 +88,7 @@ class LSTMModel(Model):
         # Train the model
         self.model.fit(self.trainX, self.trainY, epochs=10, batch_size=32, verbose=1)
 
-    def compute(self, test_data):
+    def compute(self, train_data, test_data):
         # Prepare test data
         total_data = pd.concat((train_data['Close'], test_data['Close']), axis=0)
         inputs = total_data[len(total_data) - len(test_data) - self.look_back:].values
@@ -106,5 +106,8 @@ class LSTMModel(Model):
         predicted_stock_price = self.scaler.inverse_transform(predicted_stock_price)
 
         # Create a DataFrame with predictions
-        predictions = pd.Series(predicted_stock_price.flatten(), index=test_data.index[self.look_back:])
+        print(predicted_stock_price.flatten())
+        print(len(predicted_stock_price.flatten()))
+        print(len(test_data))
+        predictions = pd.Series(predicted_stock_price.flatten(), index=test_data.index)
         return predictions

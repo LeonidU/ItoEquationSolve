@@ -56,7 +56,7 @@ def main():
     model.train(train_data)
     
     # Step 5: Compute predictions on the test set
-    predictions = model.compute(test_data)
+    predictions = model.compute(train_data, test_data)
     
     # Step 6: Calculate benefits or losses
     results, total_profit_loss = calculate_profit_loss(test_data, predictions)
