@@ -1,6 +1,6 @@
 # Trader class for trading decisions and performance estimation
 class Trader:
-    def __init__(self, initial_capital=10000.0, commission=0.0):
+    def __init__(self, model, initial_capital=10000.0, commission=0.0):
         self.initial_capital = initial_capital
         self.capital = initial_capital
         self.commission = commission
